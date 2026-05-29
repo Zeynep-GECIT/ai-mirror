@@ -21,7 +21,6 @@ def get_color(risk_percent):
     g = int(255 * (1 - risk_percent / 100))
     return f"rgb({r},{g},50)"
 
-@st.cache_data
 def get_ai_analysis(occupation, risk_percent):
     import time
     model = genai.GenerativeModel('gemini-2.5-flash')
@@ -116,6 +115,11 @@ if submitted and job:
     
     st.markdown("<br>", unsafe_allow_html=True)
     st.progress(int(risk_percent))
+
+    cache_key = f"{occupation}_{risk_percent}"
+    if cache_key not in st.session_state:
+        with st.spinner('Analyzing your career...'):
+            st.session_state[cache_key] = get_ai_analysis(occupation, risk_percent)
     
     with st.spinner('Analyzing your career...'):
         analysis = get_ai_analysis(occupation, risk_percent)
