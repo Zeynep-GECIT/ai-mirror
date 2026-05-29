@@ -119,7 +119,6 @@ if submitted and job:
     
     with st.spinner('Analyzing your career...'):
         analysis = get_ai_analysis(occupation, risk_percent)
-        st.empty()
         
         st.markdown('---')
         st.markdown('### 🔍 AI Analysis')
