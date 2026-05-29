@@ -10,6 +10,10 @@ AI Mirror analyzes how vulnerable your career is to automation using Oxford Univ
 - Skills to develop to stay relevant
 - 5-year career outlook
 
+<img width="1365" height="550" alt="002" src="https://github.com/user-attachments/assets/f12d6464-fbd8-4e5d-ac55-1910c05ac85d" />
+
+<img width="1366" height="551" alt="003" src="https://github.com/user-attachments/assets/6a9a04b8-23c0-4bcb-bd46-099f0751fc56" />
+
 ## Technologies
 - Python
 - Streamlit
