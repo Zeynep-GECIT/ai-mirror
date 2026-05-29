@@ -8,7 +8,7 @@ import os
 load_dotenv()
 genai.configure(api_key=os.getenv('API_KEY'))
 
-df = pd.read_csv("occupations.csv")
+df = pd.read_csv("occupations.csv", encoding='latin-1')
 
 def get_automation_risk(job_title):
     match = process.extractOne(job_title, df["Occupation"])
