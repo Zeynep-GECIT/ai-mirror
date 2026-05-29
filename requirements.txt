@@ -1,0 +1,6 @@
+streamlit
+pandas
+thefuzz
+google-generativeai
+python-dotenv
+python-Levenshtein
