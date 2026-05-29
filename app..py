@@ -44,7 +44,7 @@ def get_ai_analysis(occupation, risk_percent):
                 with st.spinner('Rate limit reached, retrying in 31 seconds...'):
                     time.sleep(31)
             else:
-                return 'Analysis temporarily unavailable. Please try again later.'
+                return f'Error: {str(e)}'
 
 st.set_page_config(page_title="AI MIRROR", layout="centered")
 
