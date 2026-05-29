@@ -40,7 +40,7 @@ def get_ai_analysis(occupation, risk_percent):
             return response.text
         except Exception as e:
             if '429' in str(e) and attempt < 2:
-                with st.spinner('Rate limit reached, retrying in 31 seconds...'):
+                with st.spinner('Rate limit reached, retrying in 30 seconds...'):
                     time.sleep(31)
             else:
                 return 'Analysis temporarily unavailable. Please try again later.'
