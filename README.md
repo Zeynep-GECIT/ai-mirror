@@ -2,6 +2,8 @@
 
 AI Mirror analyzes how vulnerable your career is to automation using Oxford University's Future of Employment research data and Google Gemini AI.
 
+<img width="1366" height="550" alt="001" src="https://github.com/user-attachments/assets/41b2a425-961f-4633-8497-3e8a37178741" />
+
 ## Features
 - Automation risk score for 702 occupations
 - AI-powered career analysis
